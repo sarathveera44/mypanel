@@ -1,9 +1,5 @@
 import React, { Fragment, useState } from "react";
 import {
-  FaBook,
-  FaBuilding,
-  FaCar,
-  FaMoneyBillAlt,
   FaRegTimesCircle,
   FaSync,
   FaUserCircle,
@@ -14,7 +10,7 @@ import MiniDash from "../component/MiniDash";
 import ProfitCard from "../component/ProfitCard";
 import DashCard from "../component/DashCard";
 import Charts from "../component/Charts";
-import PieChart from "../component/PieChart"
+import PieChart from "../component/PieChart";
 import TripCard from "../component/TripCard";
 
 function DashboardPanel() {
@@ -98,12 +94,17 @@ function DashboardPanel() {
   ];
 
   const extraTravelData = {
-    labels: ['Less than 10Kms', 'Between 10-50 Kms', 'Between 51-100 Kms', 'More than 100 Kms'],
+    labels: [
+      "Less than 10Kms",
+      "Between 10-50 Kms",
+      "Between 51-100 Kms",
+      "More than 100 Kms",
+    ],
     datasets: [
       {
         data: [300, 50, 100, 40],
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#FF6384'],
-        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#FF6384'],
+        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#FF6384"],
+        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#FF6384"],
       },
     ],
   };
@@ -170,12 +171,16 @@ function DashboardPanel() {
                   tripPanelHeading="Trip Panel"
                   viewMoreHeading="View More"
                   miniData={[
-                    { color: "teal", heading: "Ongoing", data: "04" },
-                    { color: "green", heading: "Completed", data: "06" },
-                    { color: "red", heading: "Cancelled", data: "01" },
-                    { color: "yellow", heading: "Unassigned", data: "00" },
-                    { color: "orange", heading: "Upcoming", data: "00" },
-                    { color: "gray", heading: "GRT", data: "00" },
+                    { color: "bg-teal-500", heading: "Ongoing", data: "04" },
+                    { color: "bg-green-500", heading: "Completed", data: "06" },
+                    { color: "bg-red-500", heading: "Cancelled", data: "01" },
+                    {
+                      color: "bg-yellow-500",
+                      heading: "Unassigned",
+                      data: "00",
+                    },
+                    { color: "bg-orange-500", heading: "Upcoming", data: "00" },
+                    { color: "bg-gray-500", heading: "GRT", data: "00" },
                   ]}
                 />
               </div>
@@ -184,12 +189,20 @@ function DashboardPanel() {
                   tripPanelHeading="Fleet Panel"
                   viewMoreHeading="View More"
                   miniData={[
-                    { color: "teal", heading: "Total", data: "40" },
-                    { color: "pink", heading: "Available", data: "34" },
-                    { color: "green", heading: "Reg Progress", data: "06" },
-                    { color: "gray", heading: "Checkup Pending", data: "04" },
-                    { color: "blue", heading: "On trip", data: "08" },
-                    { color: "orange", heading: "Logout", data: "04" },
+                    { color: "bg-teal-500", heading: "Total", data: "40" },
+                    { color: "bg-pink-500", heading: "Available", data: "34" },
+                    {
+                      color: "bg-green-500",
+                      heading: "Reg Progress",
+                      data: "06",
+                    },
+                    {
+                      color: "bg-gray-500",
+                      heading: "Checkup Pending",
+                      data: "04",
+                    },
+                    { color: "bg-blue-500", heading: "On trip", data: "08" },
+                    { color: "bg-orange-500", heading: "Logout", data: "04" },
                   ]}
                 />
               </div>
@@ -198,15 +211,31 @@ function DashboardPanel() {
                   tripPanelHeading="Vehicles Panel"
                   viewMoreHeading="View More"
                   miniData={[
-                    { color: "teal", heading: "Total", data: "48" },
-                    { color: "yellow", heading: "Unassign", data: "26" },
-                    { color: "green", heading: "On trip", data: "05" },
-                    { color: "orange", heading: "Logged out", data: "08" },
-                    { color: "green", heading: "Reg progress", data: "03" },
-                    { color: "gray", heading: "Checkup pending", data: "03" },
-                    { color: "red", heading: "Blocked for trip", data: "02" },
+                    { color: "bg-teal-500", heading: "Total", data: "48" },
+                    { color: "bg-yellow-500", heading: "Unassign", data: "26" },
+                    { color: "bg-green-500", heading: "On trip", data: "05" },
                     {
-                      color: "pink",
+                      color: "bg-orange-500",
+                      heading: "Logged out",
+                      data: "08",
+                    },
+                    {
+                      color: "bg-green-500",
+                      heading: "Reg progress",
+                      data: "03",
+                    },
+                    {
+                      color: "bg-gray-500",
+                      heading: "Checkup pending",
+                      data: "03",
+                    },
+                    {
+                      color: "bg-red-500",
+                      heading: "Blocked for trip",
+                      data: "02",
+                    },
+                    {
+                      color: "bg-pink-500",
                       heading: "Driver login pending",
                       data: "03",
                     },
@@ -221,21 +250,21 @@ function DashboardPanel() {
                   tripPanelHeading="Review"
                   viewMoreHeading="View More"
                   miniData={[
-                    { color: "yellow", heading: "kumar", data: "3" },
-                    { color: "teal", heading: "ram", data: "4" },
-                    { color: "green", heading: "raja", data: "5" },
+                    { color: "bg-yellow-500", heading: "kumar", data: "3" },
+                    { color: "bg-teal-500", heading: "ram", data: "4" },
+                    { color: "bg-green-500", heading: "raja", data: "5" },
                   ]}
                 />
               </div>
               <div className="flex flex-col text-center items-center justify-center bg-white rounded-lg shadow-lg p-2">
                 <PieChart
-                data={extraTravelData}
-                options={{ responsive: true, maintainAspectRatio: false }}
-              />
+                  data={extraTravelData}
+                  options={{ responsive: true, maintainAspectRatio: false }}
+                />
               </div>
-              </div>
-              <hr className="my-4 border-b-2 border-black" />
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+            </div>
+            <hr className="my-4 border-b-2 border-black" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
               <div className="flex flex-col bg-white rounded-lg shadow-lg p-2 w-full">
                 <TripCard trip={dummyTrips[0]} />
               </div>
