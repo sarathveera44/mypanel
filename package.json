@@ -1,5 +1,6 @@
 {
   "name": "my-panel",
+  "homepage": "https://sarathveera44.github.io/mypanel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
