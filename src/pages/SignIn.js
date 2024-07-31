@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AdminLayout from '../component/AdminLayout';
+import { FaLaptopCode, FaLaptopMedical } from 'react-icons/fa6';
 
 function SignIn() {
   const navigate = useNavigate();
@@ -47,9 +48,10 @@ function SignIn() {
     <AdminLayout>
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">
       <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
-        <div className="text-center mb-6">
+        <div className="text-center mb-6 text-blue-700">
           {/* <h1 className="text-3xl font-bold text-gray-800 mb-2">SignIn</h1> */}
-          <img src="/images/admin.png" alt="Login Image" className="mx-auto w-24 h-24 p-2 object-cover rounded-full border-2 border-blue-700"/>
+          <FaLaptopCode className="mx-auto w-24 h-24 p-2 object-cover rounded-full border-2 border-blue-700"/>
+          {/* <img src="/images/admin.png" alt="Login Image" className="mx-auto w-24 h-24 p-2 object-cover rounded-full border-2 border-blue-700"/> */}
         </div>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
